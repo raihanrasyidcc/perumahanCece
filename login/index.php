@@ -3,7 +3,7 @@ include '../database/koneksi.php';
 
 session_start();
 
-if (isset($_SESSION['nama']) && $_SESSION['role']){
+if (isset($_SESSION['nama']) && $_SESSION['role']) {
     header('Location:../');
 }
 
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
 
     $akunRaw = $koneksi->query("SELECT * FROM akun WHERE email='" . $email . "'");
-    if ($akunRaw->num_rows>0) {
+    if ($akunRaw->num_rows > 0) {
         $akun = $akunRaw->fetch_assoc();
         if (password_verify($password, $akun['password'])) {
             $_SESSION['nama'] = $akun['nama'];
@@ -49,7 +49,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login</title>
+    <title>Perumahan Cece | Login</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 

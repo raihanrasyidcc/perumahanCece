@@ -4,7 +4,7 @@ include '../database/koneksi.php';
 session_start();
 
 if ($_SESSION['role'] != 'admin') {
-    header('Location:../../');
+    header('Location:../');
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -125,7 +125,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Tambah Artikel | Admin</title>
+    <title>Edit Artikel | Admin</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png" />
     <link href="../css/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
@@ -134,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="../../">Perumahan Cece</a>
+        <a class="navbar-brand ps-3" href="../">Perumahan Cece</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
@@ -146,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <li class=" nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?= $_SESSION['nama'] ?></a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../../database/logout.php">Logout</a></li>
+                <li><a class="dropdown-item" href="../database/logout.php">Logout</a></li>
             </ul>
             </li>
         </ul>

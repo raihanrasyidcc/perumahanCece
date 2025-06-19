@@ -1,5 +1,11 @@
 <?php
 include '../database/koneksi.php';
+session_start();
+
+if ($_SESSION['role'] != 'admin') {
+    header('Location:../');
+}
+
 header('Content-Type: application/json');
 
 $idArtikel = $_POST['idArtikel'];

@@ -24,9 +24,8 @@ $waktuTampil = $formatter->format(new DateTime($tanggal));
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Artikel</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <title>Perumahan Cece | Artikel</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -37,13 +36,13 @@ $waktuTampil = $formatter->format(new DateTime($tanggal));
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
         <div class="container px-5">
-            <a class="navbar-brand" href="../">Perumahan cece</a>
+            <a class="navbar-brand" href="../">Perumahan Cece</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../">Beranda</a></li>
                     <?php
 
                     if (isset($_SESSION['nama'])) {
@@ -54,14 +53,14 @@ $waktuTampil = $formatter->format(new DateTime($tanggal));
                         echo '</a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">';
                         if ($_SESSION['role'] == 'admin') {
-                            echo '<li><a class="dropdown-item" href="admin/">Admin</a></li>
+                            echo '<li><a class="dropdown-item" href="../admin/">Admin</a></li>
                             <li>
-                            <hr class="dropdown-divider" />
+                            <hr class="dropdown-divider"/>
                         </li>
                             ';
                         }
                         echo '
-                        <li><a class="dropdown-item" href="database/logout.php">Logout</a></li>
+                        <li><a class="dropdown-item" href="../database/logout.php">Logout</a></li>
                     </ul>
                     </li>
                         ';

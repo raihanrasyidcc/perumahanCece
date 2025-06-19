@@ -102,6 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Tambah Artikel | Admin</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/icon.png" />
     <link href="../../css/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
