@@ -17,7 +17,7 @@ include '../database/koneksi.php';
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard | Admin</title>
+    <title>Aset Cece | Admin</title>
     <link rel="icon" type="image/x-icon" href="../assets/icon.png" />
     <link href="../css/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
@@ -27,7 +27,7 @@ include '../database/koneksi.php';
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="../">Perumahan Cece</a>
+        <a class="navbar-brand ps-3" href="../">Aset Cece</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
@@ -92,7 +92,7 @@ include '../database/koneksi.php';
                                                 </h6>
                                     <h5 class="card-title">' . $artikel['judul'] . '</h5>
                                     <p class="card-text">' . $artikel['isi'] . '</p>
-                                    <a href="edit.php?idArtikel=' . $artikel['id_artikel'] . '" class="btn btn-primary">Kelola</a>
+                                    <a href="edit.php?idArtikel=' . $artikel['id_artikel'] . '" class="btn btn-primary">Edit</a>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ include '../database/koneksi.php';
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                        <div class="text-muted">Copyright &copy; Aset Cece 2025</div>
                         <div>
                             <a href="#">Privacy Policy</a>
                             &middot;

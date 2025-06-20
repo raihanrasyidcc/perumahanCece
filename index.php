@@ -16,7 +16,7 @@ $artikelRaw = $koneksi->query($query);
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Perumahan Cece</title>
+    <title>Aset Cece</title>
     <link rel="icon" type="image/x-icon" href="assets/icon.png" />
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@ $artikelRaw = $koneksi->query($query);
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
         <div class="container px-5">
-            <a class="navbar-brand" href="../">Perumahan Cece</a>
+            <a class="navbar-brand" href="../">Aset Cece</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -71,8 +71,8 @@ $artikelRaw = $koneksi->query($query);
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-6">
                                 <div class="text-center my-5">
-                                    <h1 class="display-5 fw-bolder text-white mb-2">Selamat Datang di Website Perumahan Kami!</h1>
-                                    <p class="lead text-white-50 mb-4">Disini Anda bisa memiliki Rumah Impian yang Anda Inginkan</p>
+                                    <h1 class="display-5 fw-bolder text-white mb-2">Selamat Datang di Website Aset Kami!</h1>
+                                    <p class="lead text-white-50 mb-4">Disini Anda bisa memiliki Aset Impian yang Anda Inginkan</p>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +148,7 @@ $artikelRaw = $koneksi->query($query);
                                 <div class="card mb-3">
                                     <div class="card-header">Tentang</div>
                                     <div class="p-3">
-                                        <p class="card-text">Website informasi perumahan terpercaya untuk keluarga Indonesia.</p>
+                                        <p class="card-text">Website informasi Aset yang terpercaya di Malang.</p>
                                     </div>
                                 </div>
                             </div>
@@ -158,9 +158,10 @@ $artikelRaw = $koneksi->query($query);
                     <!-- Footer-->
                     <footer class="py-5 bg-dark">
                         <div class="container px-5">
-                            <p class="m-0 text-center text-white">Copyright &copy; Perumahan Malang</p>
+                            <p class="m-0 text-center text-white">Copyright &copy; Aset Cece 2025</p>
                         </div>
                     </footer>
+
                     <!-- Bootstrap core JS-->
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
                     <!-- Core theme JS-->
@@ -170,12 +171,6 @@ $artikelRaw = $koneksi->query($query);
                     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
                     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
                     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-                    <footer class="py-4 bg-dark mt-auto">
-                        <div class="container text-center">
-                            <p class="m-0 text-white">&copy; 2025 Perumahan Cece</p>
-                        </div>
-                    </footer>
 </body>
 
-</html>
+</html

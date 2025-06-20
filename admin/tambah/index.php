@@ -167,10 +167,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <label for="select" class="form-label">Kategori</label>
                                 <select class="form-select mb-3" aria-label="Default select example" name="kategori" required>
                                     <option selected disabled>Pilihan</option>
-                                    <option value="Tips & Trick">Tips & Trick</option>
-                                    <option value="Edukasi">??</option>
-                                    <option value="3">??</option>
-                                    <option value="4">??</option>
+                                    <option value="Rumah">Rumah</option>
+                                    <option value="Kos">Kos</option>
+                                    <option value="3">Tanah</option>
+                                    <option value="4">Ruko</option>
                                 </select>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Isi</label>
