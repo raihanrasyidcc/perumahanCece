@@ -12,7 +12,7 @@ $idArtikel = $_POST['idArtikel'];
 
 $artikel = $koneksi->query("SELECT * FROM artikel WHERE id_artikel='$idArtikel'")->fetch_assoc();
 if (!empty($artikel['foto'])) {
-    $fotoPath = '../../' . $artikel['foto'];
+    $fotoPath = '../' . $artikel['foto'];
     if (file_exists($fotoPath)) {
         unlink($fotoPath);
     }

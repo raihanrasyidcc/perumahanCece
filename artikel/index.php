@@ -24,7 +24,7 @@ $waktuTampil = $formatter->format(new DateTime($tanggal));
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Perumahan Cece | Artikel</title>
+    <title>Aset Cece | Artikel</title>
     <link rel="icon" type="image/x-icon" href="../assets/icon.png" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -36,7 +36,7 @@ $waktuTampil = $formatter->format(new DateTime($tanggal));
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
         <div class="container px-5">
-            <a class="navbar-brand" href="../">Perumahan Cece</a>
+            <a class="navbar-brand" href="../">Aset Cece</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -112,6 +112,9 @@ $waktuTampil = $formatter->format(new DateTime($tanggal));
                                 <div class="card-header">
                                     Artikel Terkait
                                 </div>
+                                <div class="p-3"> 
+                                    <p class="card-text">Website informasi Aset yang terpercaya di Malang.</p>
+                                </div>
                                 <ul class="list-group list-group-flush">
 
                                     <?php
@@ -134,7 +137,7 @@ $waktuTampil = $formatter->format(new DateTime($tanggal));
                     <!-- Footer-->
                     <footer class="py-5 bg-dark">
                         <div class="container px-5">
-                            <p class="m-0 text-center text-white">Copyright &copy; Perumahan Malang</p>
+                            <p class="m-0 text-center text-white">Copyright &copy; Aset Cece 2025</p>
                         </div>
                     </footer>
                     <!-- Bootstrap core JS-->

@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             exit;
         }
 
-        $newFileName = $judul . '.' . $fotoExt;
+        $newFileName = $namaFoto;
         $targetPath = '../../artikel/foto/' . $newFileName;
 
         if (move_uploaded_file($tmpFoto, $targetPath)) {
@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="../../">Perumahan Cece</a>
+        <a class="navbar-brand ps-3" href="../../">Aset Cece</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
@@ -169,8 +169,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                     <option selected disabled>Pilihan</option>
                                     <option value="Rumah">Rumah</option>
                                     <option value="Kos">Kos</option>
-                                    <option value="3">Tanah</option>
-                                    <option value="4">Ruko</option>
+                                    <option value="Tanah">Tanah</option>
+                                    <option value="Ruko">Ruko</option>
                                 </select>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Isi</label>
@@ -185,7 +185,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Perumahan Malang 2025</div>
+                        <div class="text-muted">Copyright &copy; Aset Cece 2025</div>
                         <div>
                             <!-- <a href="#">Privacy Policy</a>
                             &middot;

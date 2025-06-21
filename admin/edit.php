@@ -37,8 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             exit;
         }
 
-        $newFileName = $judul . '.' . $fotoExt;
-        $targetPath = '../../artikel/foto/' . $newFileName;
+        $newFileName = $namaFoto;
+        $targetPath = '../artikel/foto/' . $newFileName;
 
         if (move_uploaded_file($tmpFoto, $targetPath)) {
             $newTargetPath = 'artikel/foto/' . $newFileName;
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $dataLamaRaw = $koneksi->query("SELECT * FROM artikel WHERE id_artikel='" . $idArtikel . "'");
     $dataLama = $dataLamaRaw->fetch_assoc();
     if (!empty($dataLama['foto'])) {
-        $pathFotoLama = '../../' . $dataLama['foto'];
+        $pathFotoLama = '../' . $dataLama['foto'];
         if (file_exists($pathFotoLama) && is_file($pathFotoLama)) {
             unlink($pathFotoLama);
         }
@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="../">Perumahan Cece</a>
+        <a class="navbar-brand ps-3" href="../">Aset Cece</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
@@ -194,10 +194,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <label for="select" class="form-label">Kategori</label>
                                 <select class="form-select mb-3" aria-label="Default select example" id="kategori" name="kategori" required>
                                     <option selected disabled>Pilihan</option>
-                                    <option value="Tips & Trick">Tips & Trick</option>
-                                    <option value="Edukasi">??</option>
-                                    <option value="3">??</option>
-                                    <option value="4">??</option>
+                                    <option value="Rumah">Rumah</option>
+                                    <option value="Kos">Kos</option>
+                                    <option value="Tanah">Tanah</option>
+                                    <option value="Ruko">Ruko</option>
                                 </select>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Isi</label>
@@ -213,7 +213,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Perumahan Malang 2025</div>
+                        <div class="text-muted">Copyright &copy; Aset Cece 2025</div>
                         <div>
                             <!-- <a href="#">Privacy Policy</a>
                             &middot;
